@@ -1,0 +1,9 @@
+The algorithm choosen for this problem is simple selection sort. It has a complexity of O(n^2).
+We could utilize a quicker algorithm such as merge sort with a complexity of O(nlogn). 
+However since we have a restriction of keeping placing numbers in the number positions and the words in the word positions, an algorithm like merge sort creates overhead of keeping track of numeric/word spots.
+This is because the merge sort algorithm moves the items about.
+In comparison selection sort swaps the two items in place, allowing us to use a single array for both the words and numbers
+Hence to keep the algorithm simple, I have opted to use selection sort for this problem.
+
+As the number of words increase performance of selection sort will degrade as the number of comparisons increase.
+However we save the overhead of seperating the words and numbers into seperate arrays and then recombining them according to numeric/word spots
